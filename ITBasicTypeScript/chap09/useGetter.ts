@@ -17,12 +17,21 @@ class Student {
         console.log(`${this.name}の合計得点: ${this.total}`);
     }
 
+    // getなくてもいけるんちゃう？
+    // showScoresAvg() {
+    //     const avg = Math.round(this.total / 3 * 10) /10;
+    //     console.log(`${this.name}の平均点: ${avg}`);
+    // }
     showScoresAvg() {
-        const avg = Math.round(this.total / 3 * 10) /10;
+        const avg = Math.round(this.total() / 3 * 10) /10;
         console.log(`${this.name}の平均点: ${avg}`);
     }
 
-    get total(): number {
+    // get total(): number {
+    //     return this.english + this.math + this.japanese;
+    // }
+    // getなくてもいけるんちゃう？→関数そのもの
+    total(): number {
         return this.english + this.math + this.japanese;
     }
 }
