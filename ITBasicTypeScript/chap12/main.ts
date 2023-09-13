@@ -1,6 +1,9 @@
 //receiveWeatherInfo関数をインポート。
 import {receiveWeatherInfo} from "./weatherinfo-receiver";
 
+// 自分で追加してみた
+import {WeatherInfo} from "./WeatherInfo";
+
 //アクセス先URLの基本部分の変数を用意。
 const weatherinfoUrl = "http://api.openweathermap.org/data/2.5/weather";
 // クエリパラメータの元データとなるオブジェクトリテラルを用意。
@@ -15,7 +18,7 @@ const params:{
     //都市名を表すクエリパラメータ。
     q: "Himeji",
     //APIキーのクエリパラメータ。ここに各自の文字列を記述する！！
-    appId: ""
+    appId: "b3465929078d365328dde8c751e0ccbd"
 }
 
 //クエリパラメータを生成。
@@ -26,7 +29,7 @@ const queryParams = new URLSearchParams(params);
 // receiveWeatherInfo(urlFull);
 
 // ~省略~（以下p309）
-const urlFull = `${weatherinfoUrl}&q=${q}&appid=${appId}`;
+const urlFull = `${weatherinfoUrl}&q=${params.q}&appid=${params.appId}`;
 const promise = receiveWeatherInfo(urlFull);
 // 非同期処理が成功した場合の処理を定義。
 promise.then(

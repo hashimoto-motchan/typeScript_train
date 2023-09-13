@@ -28,7 +28,7 @@ var WeatherInfo = /** @class */ (function () {
         //経度情報を得るゲッタ。
         get: function () {
             var coord = this._weatherInfoJSON.coord;
-            return coord.lat;
+            return coord.lon;
         },
         enumerable: false,
         configurable: true

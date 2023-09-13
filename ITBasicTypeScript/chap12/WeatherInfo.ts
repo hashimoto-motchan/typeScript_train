@@ -20,7 +20,7 @@ export class WeatherInfo {
     //経度情報を得るゲッタ。
     get longitude() {
         const coord = this._weatherInfoJSON.coord;
-        return coord.lat;
+        return coord.lon;
     }
     // 天気情報を得るゲッタ。
     get weatherDesc() {
@@ -41,12 +41,12 @@ interface WeatherInfoJSON {
     base: string,
     main: 
         {
-            temp: number,
-            feels_like: number,
-            temp_min: number,
-            temp_max: number,
-            pressure: number,
-            humidity: number
+        temp: number,
+        feels_like: number,
+        temp_min: number,
+        temp_max: number,
+        pressure: number,
+        humidity: number
         },
     visibility: number,
     wind:
