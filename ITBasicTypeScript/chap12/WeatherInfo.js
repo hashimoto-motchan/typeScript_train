@@ -37,6 +37,7 @@ var WeatherInfo = /** @class */ (function () {
         // 天気情報を得るゲッタ。
         get: function () {
             // let weatherArray: any[] = [];
+            // console.log(this._weatherInfoJSON.weather);
             var weatherArray = this._weatherInfoJSON.weather;
             var weather = weatherArray[0];
             return weather.description;

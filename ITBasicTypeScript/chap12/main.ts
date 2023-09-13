@@ -5,7 +5,7 @@ import {receiveWeatherInfo} from "./weatherinfo-receiver";
 import {WeatherInfo} from "./WeatherInfo";
 
 //アクセス先URLの基本部分の変数を用意。
-const weatherinfoUrl = "http://api.openweathermap.org/data/2.5/weather";
+const weatherinfoUrl = "http://api.openweathermap.org/data/3.0/weather";
 // クエリパラメータの元データとなるオブジェクトリテラルを用意。
 const params:{
     lang: string,
@@ -17,7 +17,7 @@ const params:{
     lang: "ja",
     //都市名を表すクエリパラメータ。
     q: "Himeji",
-    //APIキーのクエリパラメータ。ここに各自の文字列を記述する！！
+    //APIキーのクエリパラメータ。ここに各自の文字列を記述する！
     appId: "b3465929078d365328dde8c751e0ccbd"
 }
 

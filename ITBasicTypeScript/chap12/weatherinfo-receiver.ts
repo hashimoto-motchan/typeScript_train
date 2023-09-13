@@ -7,8 +7,10 @@ import {WeatherInfo} from "./WeatherInfo";
 export async function receiveWeatherInfo(url: string): Promise<WeatherInfo> {
     // URLに非同期でアクセスしてデータを取得。
     const response = await fetch(url);
+    // console.log(response);
     // 取得したデータを非同期でJSONに変換。
     const weatherInfoJSON = await response.json();
+    console.log(weatherInfoJSON);
     // WeatherInfoオブジェクトを生成。リターン。
     const weatherInfo = new WeatherInfo(weatherInfoJSON);
     return weatherInfo;

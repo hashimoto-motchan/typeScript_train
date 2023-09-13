@@ -25,11 +25,16 @@ export class WeatherInfo {
     // 天気情報を得るゲッタ。
     get weatherDesc() {
         // let weatherArray: any[] = [];
+        // console.log(this._weatherInfoJSON.weather);
         const weatherArray = this._weatherInfoJSON.weather;
         const weather: any = weatherArray[0];
+        
         return weather.description;
+
     }
+
 }
+
 
 // 天気情報をJSONのデータ形式を定義したインターフェース。
 interface WeatherInfoJSON {

@@ -3,14 +3,14 @@ Object.defineProperty(exports, "__esModule", { value: true });
 //receiveWeatherInfo関数をインポート。
 var weatherinfo_receiver_1 = require("./weatherinfo-receiver");
 //アクセス先URLの基本部分の変数を用意。
-var weatherinfoUrl = "http://api.openweathermap.org/data/2.5/weather";
+var weatherinfoUrl = "http://api.openweathermap.org/data/3.0/weather";
 // クエリパラメータの元データとなるオブジェクトリテラルを用意。
 var params = {
     //言語設定のクエリパラメータ
     lang: "ja",
     //都市名を表すクエリパラメータ。
     q: "Himeji",
-    //APIキーのクエリパラメータ。ここに各自の文字列を記述する！！
+    //APIキーのクエリパラメータ。ここに各自の文字列を記述する！
     appId: "b3465929078d365328dde8c751e0ccbd"
 };
 //クエリパラメータを生成。

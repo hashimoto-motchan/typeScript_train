@@ -53,6 +53,7 @@ function receiveWeatherInfo(url) {
                     return [4 /*yield*/, response.json()];
                 case 2:
                     weatherInfoJSON = _a.sent();
+                    console.log(weatherInfoJSON);
                     weatherInfo = new WeatherInfo_1.WeatherInfo(weatherInfoJSON);
                     return [2 /*return*/, weatherInfo];
             }
