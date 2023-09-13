@@ -24,8 +24,9 @@ export class WeatherInfo {
     }
     // 天気情報を得るゲッタ。
     get weatherDesc() {
+        // let weatherArray: any[] = [];
         const weatherArray = this._weatherInfoJSON.weather;
-        const weather = weatherArray[0];
+        const weather: any = weatherArray[0];
         return weather.description;
     }
 }

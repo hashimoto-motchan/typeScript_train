@@ -36,6 +36,7 @@ var WeatherInfo = /** @class */ (function () {
     Object.defineProperty(WeatherInfo.prototype, "weatherDesc", {
         // 天気情報を得るゲッタ。
         get: function () {
+            // let weatherArray: any[] = [];
             var weatherArray = this._weatherInfoJSON.weather;
             var weather = weatherArray[0];
             return weather.description;
