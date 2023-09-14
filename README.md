@@ -12,4 +12,7 @@ https://api.openweathermap.org/data/2.5/weather?lang=ja&q=Himeji&appid=b34659290
 
 mail: [hashimoto20540@gmail.com](mailto:hashimoto20540@gmail.com)
 
+
 pass: kazuya0928h
+
+b3465929078d365328dde8c751e0ccbd
